@@ -23,5 +23,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!whoru') {
+    	message.reply('Hi, I am the bot that only belongs to Call of Duty: The Legends, I am open 24/7 so feel free to play with me!');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot 
