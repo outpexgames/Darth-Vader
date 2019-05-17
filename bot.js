@@ -31,7 +31,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.reply('help😎 section: visit https://outpex.weebly.com for help');
+    	message.reply('help section: visit https://outpex.weebly.com for help');
   	}
 });
 
