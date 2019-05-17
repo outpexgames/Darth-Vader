@@ -29,5 +29,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!help') {
+    	message.reply('help😎 section: 1. !hi, make k9 greet you, 2. !ping, k9 will responce with pong. 3.!whoru, and k9 will introduce itself');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);//where BOT_TOKEN is the token of our bot 
