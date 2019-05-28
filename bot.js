@@ -5,6 +5,11 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+bot.on("ready", () => {
+    bot.user.setGame('Awesome Fun Game'); //you can set a default game
+    console.log(`Bot is online!\n${bot.users.size} users, in ${bot.guilds.size} servers connected.`);
+});
+
 client.on('message', message => {
     if (message.content === '!ping') {
     	message.reply('pong');
